@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
 </head>
 <body>
     <div class="product-detail">
@@ -139,20 +139,28 @@
                                             <p class="title-quantity">Số Lượng</p>
                                         </div>
                                         <div class="col-md-9 d-flex">
-                                            <div class="d-flex btn-input__quantity">
-                                                <div class="btn-quantity reduce">
-                                                    -
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="d-flex btn-input__quantity">
+                                                        <div class="btn-quantity reduce">
+                                                            -
+                                                        </div>
+                                                        <div class="show-quantity">
+                                                            <input class="form-control quantity-product__buy" type="text" value="1">
+                                                        </div>
+                                                        <div class="btn-quantity increase">
+                                                            +
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="show-quantity">
-                                                    <input class="form-control quantity-product__buy" type="text" value="1">
-                                                </div>
-                                                <div class="btn-quantity increase">
-                                                    +
+                                                <div class="col-md-7">
+                                                    <div class="product-availability">
+                                                        <p class="text-product__availability">456 sản phẩm có</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="product-availability">
-                                                <p class="text-product__availability">456 sản phẩm có</p>
-                                            </div>
+                                            
+                                            
                                         </div>
                                     </div>
                             </div>
