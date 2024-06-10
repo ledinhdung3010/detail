@@ -212,21 +212,7 @@
 .product-detail .container-description__product{
     padding: 25px;
 }
-.inf-product__detail .header-product__detail{
-    padding: 15px 10px;
-    background-color: rgba(255, 248, 248, 0.962);
-}
-.inf-product__detail .header-product__detail .title-header__detail{
-    font-weight: 400;
-}
-.container-description__product .inf-product__detail .content-inf-product__detail{
-    margin-top: 30px;
-}.content-inf-product__detail .item-inf-product__detail{
-    padding: 10px 10px;
-}
-.content-inf-product__detail .item-inf-product__detail .title-item-inf-product__detail{
-    color: rgba(0, 0, 0, 0.4);
-}
+
 .container-description__product .inf-product__description{
     padding: 15px 0;
 }
