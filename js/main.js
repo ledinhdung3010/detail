@@ -19,16 +19,37 @@ $(document).ready(function() {
     var nextBtn = $('.next-img__product');
     var totalSlides = $('.thumbnail').length;
     var slideWidth = $('.thumbnail').outerWidth(true);
-    var slidesVisible = 4;
     var currentSlide = 0;
+    var slidesVisible = 4; // Default number of slides visible
 
-    // Hiển thị ảnh ban đầu
-    showSlides();
+    // Function to update the number of visible slides based on screen size
+    function updateSlidesVisible() {
+        if ($(window).width() <= 480) { // Assuming Android screen size
+            slidesVisible = 2;
+        } else {
+            slidesVisible = 4;
+        }
+    }
+
+    // Initial call to set the correct number of visible slides
+    updateSlidesVisible();
+    
+    // Update the number of visible slides on window resize
+    $(window).resize(function() {
+        updateSlidesVisible();
+        showSlides();
+    });
+
+    // Function to show slides
     function showSlides() {
         thumbnails.children('.thumbnail').hide();
         thumbnails.children('.thumbnail').slice(currentSlide, currentSlide + slidesVisible).show();
     }
 
+    // Initial display of slides
+    showSlides();
+
+    // Previous button click event
     prevBtn.click(function() {
         if (currentSlide > 0) {
             currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
@@ -36,13 +57,15 @@ $(document).ready(function() {
         }
     });
 
+    // Next button click event
     nextBtn.click(function() {
         if (currentSlide < totalSlides - slidesVisible) {
             currentSlide = (currentSlide + 1) % totalSlides;
             showSlides();
-        } 
+        }
     });
 });
+
 // selected color
 $('.select-color').click(function(){
     if ($(this).hasClass('selected')) {
@@ -106,16 +129,37 @@ $(document).ready(function() {
     var nextBtn = $('.next-product');
     var totalSlides = $('.product-item .inf-product').length;
     var slideWidth = $('.product-item .inf-product').outerWidth(true);
-    var slidesVisible = 4;
     var currentSlide = 0;
+    var slidesVisible = 4; // Default number of slides visible
 
-    // Hiển thị ảnh ban đầu
-    showSlides();
+    // Function to update the number of visible slides based on screen size
+    function updateSlidesVisible() {
+        if ($(window).width() <= 767) { // Assuming Android screen size
+            slidesVisible = 2;
+        } else {
+            slidesVisible = 4;
+        }
+    }
+
+    // Initial call to set the correct number of visible slides
+    updateSlidesVisible();
+    
+    // Update the number of visible slides on window resize
+    $(window).resize(function() {
+        updateSlidesVisible();
+        showSlides();
+    });
+
+    // Function to show slides
     function showSlides() {
         thumbnails.children('.product-item .inf-product').hide();
         thumbnails.children('.product-item .inf-product').slice(currentSlide, currentSlide + slidesVisible).show();
     }
 
+    // Initial display of slides
+    showSlides();
+
+    // Previous button click event
     prevBtn.click(function() {
         if (currentSlide > 0) {
             currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
@@ -123,12 +167,15 @@ $(document).ready(function() {
         }
     });
 
+    // Next button click event
     nextBtn.click(function() {
         if (currentSlide < totalSlides - slidesVisible) {
             currentSlide = (currentSlide + 1) % totalSlides;
             showSlides();
-        } 
+        }
     });
 });
+
+
 
 
