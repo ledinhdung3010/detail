@@ -89,6 +89,7 @@
 }
 .inf-product .price .price-sell{
     margin-top: 20px;
+    margin-right: 20px;
 }
 .inf-product .price .text-product__commont{
     text-decoration: line-through;
@@ -98,7 +99,7 @@
 .inf-product .price .cost{
     font-size: 30px;
     color:  rgb(238, 77, 45);
-    margin: 0 15px;
+    margin-right: 15px;
     margin-top: 10px;
 }
 .inf-product .price .container-discount{
@@ -119,17 +120,19 @@
     font-weight: bold;
 }
 .container-inf__product .color-product .select-color{
-    border: 1px solid #e9e0e2;
-    margin: 3px 10px;
+    margin: 3px 3px;
+    padding: 0;
 }
-.container-inf__product .color-product .select-color:hover{
+.container-inf__product .color-product .name-color:hover{
     color:  rgb(238, 77, 45);
     border: 1px solid rgb(238, 77, 45);
 }
 .color-product .select-color .name-color{
-    padding: 1px 10px;
+    padding: 10px 5px;
     text-align: center;
-    margin-top: 5px;
+    border: 1px solid #e9e0e2;
+    margin-right: 30px;
+    width: 100%;
 }
 .container-inf__product .color-product .selected{
     color:  rgb(238, 77, 45);
@@ -173,31 +176,38 @@
     padding: 20px 0;
 }
 .product-detail .btn-group .btn-addcart{
-    color:  rgb(238, 77, 45);
-    padding: 7px 5px;
-    border: 1px solid rgb(238, 77, 45);
-    background: rgba(255, 87, 34, .1);
-    cursor: pointer;
+    
 }
 .product-detail .btn-group .btn-addcart .text-btn__addcart{
-    margin-top: 10px;
+    border: 1px solid rgb(238, 77, 45);
+    color:  rgb(238, 77, 45);
+    padding: 0 10px;
+    background: rgba(255, 87, 34, .1);
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+}
+.product-detail .btn-group .btn-addcart .text-btn__addcart .text-addcart{
+   margin-top: 10px;
 }
 .btn-group .btn-addcart .fa-cart-shopping{
     padding: 4px 10px;
+    margin-top: 10px;
     
 }
 .product-detail .btn-group .btn-buy{
-    background-color:  rgb(238, 77, 45);
-    padding: 7px 30px;
-    margin-left: 40px;
-    cursor: pointer;
+    margin-bottom: 5px;
 }
 .btn-group .btn-buy .btn-submit{
     margin-bottom: 5px;
+    background-color:  rgb(238, 77, 45);
+    margin-left: 40px;
+    cursor: pointer;
+    border-radius: none;
 }
 .product-detail .btn-group .btn-buy button{
     color: #fff;
     margin-top: 10px;
+    padding: 13px 45px;
 }
 .product-detail .btn-group .btn-buy:hover{
     opacity: 0.9;
@@ -366,4 +376,9 @@
     .content-inf-product__description .container-toggle{
         display: block;
     }
+    .color-product .select-color .name-color{
+        width: 100%;
+        margin-right: 2px;
+    }
+    
 }

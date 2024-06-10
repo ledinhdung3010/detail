@@ -67,13 +67,13 @@ $(document).ready(function() {
 });
 
 // selected color
-$('.select-color').click(function(){
+$('.name-color').click(function(){
     if ($(this).hasClass('selected')) {
         // Nếu phần tử đã có lớp active, hãy xóa nó
         $(this).removeClass('selected');
     } else {
         // Nếu phần tử chưa có lớp active, hãy thêm nó và xóa lớp active từ tất cả các phần tử khác
-        $('.select-color').removeClass('selected');
+        $('.name-color').removeClass('selected');
         $(this).addClass('selected');
     }
 });
