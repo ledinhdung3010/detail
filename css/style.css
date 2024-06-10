@@ -226,6 +226,14 @@
 .container-description__product .inf-product__description .content-inf-product__description{
     margin-top: 30px;
 }
+.content-inf-product__description .container-toggle{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+.content-inf-product__description .container-toggle .btn-toggle{
+    font-weight: bold;
+}
 .inf-product__description .content-inf-product__description img{
     margin-bottom: 5px;
 }
@@ -345,6 +353,7 @@
     right: 0;
     top: 50%;
 }
+
 @media (max-width: 767px) {
     .product-detail{
         width:115% ;

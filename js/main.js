@@ -175,6 +175,22 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function(){
+    $(".text-product__description").slice(3).hide();
+    $(".list-img-product").hide();
+})
+$("#toggle-details").click(function() {
+    if ($(this).text() === "Xem thêm") {
+        $(this).text("Ẩn đi");
+        $(".text-product__description").show();
+        $(".list-img-product").show();
+    } else {
+        $(this).text("Xem thêm");
+        $(".text-product__description").slice(3).hide();
+        $(".list-img-product").hide();
+    }
+});
+
 
 
 
