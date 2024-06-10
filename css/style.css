@@ -123,16 +123,20 @@
     margin: 3px 3px;
     padding: 0;
 }
+.container-inf__product .color-product .container-color{
+    flex-wrap: nowrap;
+}
 .container-inf__product .color-product .name-color:hover{
     color:  rgb(238, 77, 45);
     border: 1px solid rgb(238, 77, 45);
 }
 .color-product .select-color .name-color{
-    padding: 10px 5px;
+    padding: 10px 0px;
     text-align: center;
     border: 1px solid #e9e0e2;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     width: 100%;
+    font-size: 20px;
 }
 .container-inf__product .color-product .selected{
     color:  rgb(238, 77, 45);
