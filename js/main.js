@@ -175,21 +175,38 @@ $(document).ready(function() {
         }
     });
 });
-$(document).ready(function(){
-    $(".text-product__description").slice(3).hide();
-    $(".list-img-product").hide();
-})
-$("#toggle-details").click(function() {
-    if ($(this).text() === "Xem thêm") {
-        $(this).text("Ẩn đi");
-        $(".text-product__description").show();
-        $(".list-img-product").show();
-    } else {
-        $(this).text("Xem thêm");
-        $(".text-product__description").slice(3).hide();
-        $(".list-img-product").hide();
+
+$(document).ready(function() {
+    function toggleDetails() {
+        if ($(this).text() === "Xem thêm") {
+            $(this).text("Ẩn đi");
+            $(".text-product__description").show();
+            $(".list-img-product").show();
+        } else {
+            $(this).text("Xem thêm");
+            $(".text-product__description").slice(3).hide();
+            $(".list-img-product").hide();
+        }
     }
+
+    function handleResize() {
+        if ($(window).width() <= 768) {
+            $(".text-product__description").slice(3).hide();
+            $(".list-img-product").hide();
+            $("#toggle-details").off("click").on("click", toggleDetails);
+        } else {
+            $(".text-product__description").show();
+            $(".list-img-product").show();
+            $("#toggle-details").off("click");
+        }
+    }
+
+    handleResize(); // Gọi hàm một lần khi tải trang để thiết lập ban đầu
+
+    $(window).resize(handleResize); // Gọi hàm khi cửa sổ được resize
 });
+
+
 
 
 

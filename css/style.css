@@ -227,6 +227,7 @@
     margin-top: 30px;
 }
 .content-inf-product__description .container-toggle{
+    display: none;
     text-align: center;
     padding: 20px 0;
     border-top: 1px solid #ccc;
@@ -354,12 +355,15 @@
     top: 50%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .product-detail{
         width:115% ;
     }
     .container-inf__product .quantity-product .product-availability{
         padding:15px 0;
     
+    }
+    .content-inf-product__description .container-toggle{
+        display: block;
     }
 }
