@@ -106,7 +106,7 @@
 .inf-product .price .percent-discount{
     background-color: rgb(238, 77, 45) ;
     color: #fff;
-    padding: 5px 10px;
+    padding: 5px;
 
 
 }
@@ -348,10 +348,7 @@
     top: 50%;
 }
 @media (max-width: 767px) {
-    .container-mobile {
-        width: 100%;
-        max-width: 100%;
-        padding-left: 0;
-        padding-right: 0;
+    .product-detail{
+        width:110% ;
     }
 }
