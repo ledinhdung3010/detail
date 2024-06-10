@@ -80,84 +80,72 @@
                             </div>
                             <div class="container-inf__product">
                                 <div class="price d-flex">
-                                    <div class="price-sell">
-                                        <span class="text-product__commont">6000đ</span>
+                                    <div class="row">
+                                        <div class="col-2 col-md-2 price-sell">
+                                            <span class="text-product__commont">6000đ</span>
+                                        </div>
+                                        <div class="col-3 col-md-3 cost">
+                                            <span>8000đ</span>
+                                        </div>
+                                        <div class="col-5 col-md-5 container-discount">
+                                            <span class="percent-discount">-50% Giảm</span>
+                                        </div>
                                     </div>
-                                   
-                                    <span class=cost>8000đ</span>
-                                    <div class="container-discount">
-                                        <span class="percent-discount">-50% Giảm</span>
-                                    </div>
-                                   
                                 </div>
                                 <div class="color-product">
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <p class="title-color">Màu Sắc</p>
+                                            <p class="title-color">Phân Loại</p>
                                         </div>
-                                        <div class="col-md-9 d-flex">
-                                            <div class="select-color">
-                                                <p class="name-color">Màu Đen</p>
-                                            </div>
-                                            <div class="select-color">
-                                                <p class="name-color">Màu Đỏ</p>
-                                            </div>
-                                            <div class="select-color">
-                                                <p class="name-color">Màu Hồng</p>
-                                            </div>
-                                            <div class="select-color">
-                                                <p class="name-color">Màu Cam</p>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-6 col-sm-4 col-md-3 select-color">
+                                                    <p class="name-color">Màu Đen</p>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-md-3 select-color">
+                                                    <p class="name-color">Màu Đỏ</p>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-md-3 select-color">
+                                                    <p class="name-color">Màu Hồng</p>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-md-3 select-color">
+                                                    <p class="name-color">Màu Cam</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="quantity-product">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <p class="title-quantity">Số Lượng</p>
-                                            </div>
-                                            <div class="col-md-9 d-flex">
-                                                <div class="row">
-                                                    <div class="col-md-5">
-                                                        <div class="d-flex btn-input__quantity">
-                                                            <div class="btn-quantity reduce">
-                                                                -
-                                                            </div>
-                                                            <div class="show-quantity">
-                                                                <input class="form-control quantity-product__buy" type="text" value="1">
-                                                            </div>
-                                                            <div class="btn-quantity increase">
-                                                                +
-                                                            </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p class="title-quantity">Số Lượng</p>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-md-5 input_quantity">
+                                                    <div class="d-flex btn-input__quantity">
+                                                        <div class="btn-quantity reduce">-</div>
+                                                        <div class="show-quantity">
+                                                            <input class="form-control quantity-product__buy" type="text" value="1">
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                        <div class="product-availability">
-                                                            <p class="text-product__availability">456 sản phẩm có</p>
-                                                        </div>
+                                                        <div class="btn-quantity increase">+</div>
                                                     </div>
                                                 </div>
-                                                
-                                                
+                                                <div class="col-12 col-sm-6 col-md-7">
+                                                    <div class="product-availability">
+                                                        <p class="text-product__availability">456 sản phẩm có</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                </div>
-                                <div class="btn-group full-height d-flex justify-content-center align-items-center">
-                                    <div class="btn-addcart ">
-                                        <div class="text-btn__addcart d-flex">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                            <p class="text-addcart">Thêm vào giỏ hàng</p>
-                                        </div>
-                                       
-                                    </div>
-                                    <div class="btn-buy">
-                                        <button class="btn btn-submit">Mua Ngay</button>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="row container-description__product">
                         <div class="inf-product__detail">
                             <div class="header-product__detail">
@@ -482,7 +470,18 @@
                         </div>
                     </div>
                 </div>
-               
+            </div>
+            <div class="btn-group full-height d-flex justify-content-center align-items-center">
+                <div class="btn-addcart ">
+                    <div class="text-btn__addcart d-flex">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="text-addcart">Thêm vào giỏ hàng</p>
+                    </div>
+                    
+                </div>
+                <div class="btn-buy">
+                    <button class="btn btn-submit">Mua Ngay</button>
+                </div>
             </div>
     </div>
 </body>
